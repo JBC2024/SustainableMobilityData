@@ -4,14 +4,17 @@ import altair as alt
 import pydeck as pdk
 
 def home(df):
-    st.image("img/madrid_skyline.jpg",
-         caption= "Best tap water in the world, now with more Cargatron",
-         width= 1000)
+    st.header(f"Sustainable Mobility Data")
+
+    st.image("img/background.png",
+            caption= "Desarrollado por May López y Justo Barco",
+            width= 1000)
     
+
     with st.expander("Description:"):
         with st.echo(code_location='below'):
-            st.write("Welcome to the Project Cargatron. \
-                This is an app to visualize charging points in Madrid")
+            # st.write("Welcome to the Project Cargatron. \
+            #     This is an app to visualize charging points in Madrid")
             st.dataframe(df)
 
 def map(df):
