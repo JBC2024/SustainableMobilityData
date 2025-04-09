@@ -21,6 +21,7 @@ df = pd.read_csv("data/red_recarga_acceso_publico_2024.csv", sep= ";")
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
+            #_profilePreview_gzau3_63 {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
