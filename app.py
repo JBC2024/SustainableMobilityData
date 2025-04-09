@@ -18,6 +18,13 @@ st.set_page_config(
 # Carga y procesamiento de datos
 df = pd.read_csv("data/red_recarga_acceso_publico_2024.csv", sep= ";")
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 # Sistema de navegación
 option = st.sidebar.selectbox(
